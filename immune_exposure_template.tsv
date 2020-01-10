@@ -1,0 +1,116 @@
+ID	Label	Type	Parent	Has Material Basis	Definition	See also	See also
+ID	LABEL	TYPE	SC %	SC 'has material basis in' some %	A rdfs:comment	A rdfs:seeAlso	A rdfs:seeAlso
+IDO:0000664	has material basis in	owl:ObjectProperty					
+IE:1	exposure process	owl:Class					
+ONTIE:0003314	administering substance in vivo	owl:Class	exposure process		A planned process by which a material is intentionally given to an organism resulting in exposure of the organism to that substance.		http://purl.obolibrary.org/obo/OBI_0600007
+ONTIE:0003304	vaccination	owl:Class	administering substance in vivo		Adminstering a vaccine to an organism with the intention of inducing immunity against antigen components of the vaccine.	http://purl.obolibrary.org/obo/VO_0000002	
+ONTIE:0003315	infectious challenge	owl:Class	administering substance in vivo		Administering an infectious agent to an organism in order to test if and how an infection will occur.	http://purl.obolibrary.org/obo/OBI_0000712	
+ONTIE:0003316	transplant or transfusion	owl:Class	administering substance in vivo		Transferring a solid tissue (transplant) or bodily fluid (transfusion) to an organism.	http://purl.obolibrary.org/obo/OBI_0000105	
+ONTIE:0003322	occurrence of disease	owl:Class	exposure process		The process in which a disease unfolds.	http://purl.obolibrary.org/obo/OGMS_0000031	http://purl.obolibrary.org/obo/DOID_4
+ONTIE:0003317	occurrence of infectious disease	owl:Class	occurrence of disease		The process in which an infectious disease unfolds.	http://purl.obolibrary.org/obo/OBI_1110008	http://purl.obolibrary.org/obo/DOID_0050117
+ONTIE:0003318	occurrence of allergic disease	owl:Class	occurrence of disease		The process in which an allergic disease unfolds.	http://purl.obolibrary.org/obo/OBI_1110012	http://purl.obolibrary.org/obo/DOID_1205
+ONTIE:0003319	occurrence of autoimmune disease	owl:Class	occurrence of disease		The process in which an autoimmune disease unfolds.	http://purl.obolibrary.org/obo/OBI_1110054	http://purl.obolibrary.org/obo/DOID_417
+ONTIE:0003320	occurrence of cancer	owl:Class	occurrence of disease		The process in which cancer unfolds	http://purl.obolibrary.org/obo/OBI_1110053	http://purl.obolibrary.org/obo/DOID_162
+ONTIE:0003305	exposure to substance without evidence for disease	owl:Class	exposure process		An unplanned process in which an organism comes into contact with a substance without evidence for a disease caused by that exposure.		
+ONTIE:0003306	occurrence of asymptomatic infection	owl:Class	exposure to substance without evidence for disease		A process in which an infectious agent is in or on the body of an organism without causing detectable disease .		
+ONTIE:0003321	exposure with existing immune reactivity without evidence for disease	owl:Class	exposure to substance without evidence for disease		A process in which an organism is exposed to a material entity which is evident by a detectable immune reactivity against it.	http://purl.obolibrary.org/obo/OBI_1110061	
+ONTIE:0003307	documented exposure without evidence for disease	owl:Class	exposure to substance without evidence for disease		A process in which an organism is exposed to a substance which is evident from that process having been observed or documented.		
+ONTIE:0003308	environmental exposure to endemic/ubiquitous agent without evidence for disease	owl:Class	exposure to substance without evidence for disease		A process in which an organism's exposure to a material entity is assumed from that material being commonly present in the environment of the organism.		
+ONTIE:0003309	no exposure	owl:Class	exposure process		An organism's lifspan which does not include exposure to a substance of interest.		
+ONTIE:0003310	unknown	owl:Class	exposure process		An organism's lifespan for which there is no available information on an exposure to a material entity of interest.		
+ONTIE:0003311	solid tissue transplantation	owl:Class	transplant or transfusion		A planned process in which solid tissue is transferred to an organism		
+ONTIE:0003312	transfusion	owl:Class	transplant or transfusion		A planned process in which a bodily fluid is transferred into an organism		
+ONTIE:0003313	occurrence of cancer associated with virus	owl:Class	occurrence of cancer		An occurrence of cancer where there is evidence for the presence of a cancer causing oncovirus in the tumor.		
+XCO:0000248	kidney transplant	owl:Class	transplant or transfusion				
+OBI:0000278	disease stage	owl:Class					
+OGMS:0000094	Acute/Recent onset	owl:Class	disease stage				
+ONTIE:0003544	Post	owl:Class	disease stage				
+ONTIE:0003545	Unknown	owl:Class	disease stage				
+OGMS:000094	Chronic	owl:Class	disease stage				
+BFO:0000040	material entity	owl:Class					
+NCBITaxon:1	organism	owl:Class	material entity				
+NCBITaxon:10335	Human alphaherpesvirus 3	owl:Class	organism				
+NCBITaxon:11053	Dengue virus 1	owl:Class	organism				
+NCBITaxon:11060	Dengue virus 2	owl:Class	organism				
+NCBITaxon:11082	West Nile virus	owl:Class	organism				
+NCBITaxon:11103	Hepacivirus C	owl:Class	organism				
+NCBITaxon:1120755	Plasmodium cynomolgi strain B	owl:Class	Plasmodium				
+NCBITaxon:11320	Influenza A virus	owl:Class	organism				
+NCBITaxon:12637	Dengue virus	owl:Class	organism				
+NCBITaxon:1316510	A/California/7/2009	owl:Class	organism				
+NCBITaxon:139	Borrelia burgdorferi	owl:Class	organism				
+NCBITaxon:1773	Mycobacterium tuberculosis	owl:Class	organism				
+NCBITaxon:208452	Plasmodium coatneyi	owl:Class	Plasmodium				
+NCBITaxon:31708	Human rhinovirus A16	owl:Class	organism				
+NCBITaxon:37124	Chikungunya virus	owl:Class	organism				
+NCBITaxon:5820	Plasmodium	owl:Class	organism				
+NCBITaxon:5829	Plasmodium cynomolgi strain Ceylon	owl:Class	Plasmodium				
+NCBITaxon:5855	Plasmodium vivax	owl:Class	Plasmodium				
+NCBITaxon:64320	Zika virus	owl:Class	organism				
+VO:1	vaccine	owl:Class	material entity				
+VO:0000035	Dryvax	owl:Class	vaccine				
+VO:0000044	FluMist	owl:Class	vaccine				
+VO:0000045	Fluarix	owl:Class	vaccine				
+VO:0000046	Fluvirin	owl:Class	vaccine				
+VO:0000047	Fluzone	owl:Class	vaccine				
+VO:0000071	Menactra	owl:Class	vaccine				
+VO:0000081	Influenza A (H1N1) 2009 Monovalent Vaccine (Novartis)	owl:Class	vaccine				
+VO:0000087	Plasmodium falciparum vaccine	owl:Class	vaccine				
+VO:0000088	Pneumovax 23 (USA)	owl:Class	vaccine				
+VO:0000121	YF-Vax	owl:Class	vaccine				
+VO:0000122	Yellow fever 17D vaccine vector	owl:Class	vaccine				
+VO:0000124	Zostavax	owl:Class	vaccine				
+VO:0000642	Influenza virus vaccine	owl:Class	vaccine				
+VO:0000642	Trivalent inactivated influenza	owl:Class	vaccine				
+VO:0000669	Varicella-zoster virus vaccine	owl:Class	vaccine				
+VO:0000771	BCG Vaccine	owl:Class	vaccine				
+VO:0001246	Menveo	owl:Class	vaccine				
+VO:0003120	MVA85A	owl:Class	vaccine				
+VO:0003133	MRKAd5 HIV-1 gag/pol/nef	owl:Class	vaccine				
+VO:0003138	ACWY Vax	owl:Class	vaccine				
+VO:0003139	Stamaril	owl:Class	vaccine				
+VO:0003152	HEPLISAV-B	owl:Class	vaccine				
+VO:0004091	LC16m8	owl:Class	vaccine				
+VO:0004660	rVSV-EBOV	owl:Class	vaccine				
+VO:0004809	2008-2009 trivalent influenza vaccine	owl:Class	vaccine				
+VO:0010711	Engerix-B	owl:Class	vaccine				
+VO:0010725	"Meningococcal Polysaccharide Vaccine, Groups A & C, Menomune A/C"	owl:Class	vaccine				
+DOID:4	disease	owl:Class					
+DOID:0050012	Chikungunya fever	owl:Class	disease	Chikungunya virus			
+DOID:0060478	Zika fever	owl:Class	disease	Zika virus			
+DOID:0060851	Pemphigus Vulgaris	owl:Class	disease				
+DOID:10554	meningoencephalitis	owl:Class	disease				
+DOID:1063	interstitial nephritis	owl:Class	disease				
+DOID:1064	cystinosis	owl:Class	disease				
+DOID:10652	Alzheimer's disease	owl:Class	disease				
+DOID:11729	Lyme disease	owl:Class	disease				
+DOID:12205	dengue disease	owl:Class	disease	Dengue virus			
+DOID:12206	dengue hemorrhagic fever	owl:Class	dengue disease	Dengue virus			
+DOID:12365	Malaria	owl:Class	disease				
+DOID:12554	hemolytic-uremic syndrome	owl:Class	disease				
+DOID:12894	Sjogren's syndrome	owl:Class	disease				
+DOID:1312	focal segmental glomerulosclerosis	owl:Class	disease				
+DOID:14330	Parkinson's disease	owl:Class	disease				
+DOID:1883	Hepatitis C	owl:Class	disease	Hepacivirus C			
+DOID:2365	West Nile encephalitits	owl:Class	disease				
+DOID:2366	West Nile fever	owl:Class	disease	West Nile virus			
+DOID:2377	Multiple Sclerosis	owl:Class	disease				
+DOID:2973	kidney cortex necrosis	owl:Class	disease				
+DOID:2975	cystic kidney disease	owl:Class	disease				
+DOID:399	tuberculosis	owl:Class	disease				
+DOID:418	Systemic Scleroderma	owl:Class	disease				
+DOID:437	Myasthenia Gravis	owl:Class	disease				
+DOID:5200	urinary tract obstruction	owl:Class	disease				
+DOID:60478	Zika virus disease	owl:Class	disease				
+DOID:7148	Rheumatoid Arthritis	owl:Class	disease				
+DOID:783	end stage renal failure	owl:Class	disease				
+DOID:8398	Osteoarthritis	owl:Class	disease				
+DOID:8577	Ulcerative Colitis	owl:Class	disease				
+DOID:8659	Chickenpox	owl:Class	disease				
+DOID:8778	Crohn's disease	owl:Class	disease				
+DOID:8869	Neuromyelitis Optica	owl:Class	disease				
+DOID:8893	Psoriasis	owl:Class	disease				
+DOID:9074	Lupus Erythematosus	owl:Class	disease				
+DOID:9351	Diabetes Mellitus	owl:Class	disease				
+DOID:9471	Meningitis	owl:Class	disease				
+DOID:9588	encephalitis	owl:Class	disease				
