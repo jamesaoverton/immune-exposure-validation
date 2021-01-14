@@ -1,0 +1,18 @@
+table	column	condition	note
+*	Type	"in(""owl:Class"", ""owl:ObjectProperty"")"	"""*"" matches any table; value IN set"
+prefix	Prefix	prefix	
+prefix	Base	IRI	
+terminology	ID	CURIE(prefix.prefix)	
+terminology	Label	label	
+terminology	Parent	tree(terminology.Label)	
+terminology	Material Basis	"blank or under(terminology.Parent, ""material entity"")"	
+immune_exposure	exposureProcessPreferred	"under(terminology.Parent, ""exposure process"")"	
+immune_exposure	exposureProcessReported	"under(terminology.Parent, ""exposure process"")"	
+immune_exposure	exposureMaterialId	any(blank,CURIE(prefix.prefix))	
+immune_exposure	exposureMaterialPreferred	"any(blank,under(terminology.Parent, ""material entity""))"	
+immune_exposure	exposureMaterialReported	"any(blank, under(terminology.Parent, ""material entity""))"	
+immune_exposure	diseaseOntologyId	any(blank,CURIE(prefix.prefix))	
+immune_exposure	diseasePreferred	"any(blank, under(terminology.Parent, ""disease""))"	
+immune_exposure	diseaseReported	"any(blank, under(terminology.Parent, ""disease""))"	
+immune_exposure	diseaseStagePreferred	"any(blank,under(terminology.Parent, ""disease stage""))"	
+immune_exposure	diseaseStageReported	"any(blank, under(terminology.Parent, ""disease stage""))"	
