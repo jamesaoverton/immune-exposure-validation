@@ -10,12 +10,12 @@ requirements:
 	pip install -r requirements.txt
 
 extract: tables requirements
-	xlsx2csv -a -d tab immune_exposure.xlsx tables
+	xlsx2csv -a -d tab immune_exposure.xlsx $<
 	for f in tables/*.csv ; do \
 	  		mv $$f "$${f%.csv}.tsv"; \
 	  done
 
-report.tsv: tables extract
+report.tsv: tables requirements
 	valve $< -o $@
 
 validate:
