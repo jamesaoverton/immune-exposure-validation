@@ -1,6 +1,6 @@
 ID	Label	Type	Parent	Has Material Basis	Definition	See also	See also
 IDO:0000664	has material basis in	owl:ObjectProperty					
-IE:1	exposure process	owl:Class					
+IE:01	exposure process	owl:Class					
 ONTIE:0003314	administering substance in vivo	owl:Class	exposure process		A planned process by which a material is intentionally given to an organism resulting in exposure of the organism to that substance.		http://purl.obolibrary.org/obo/OBI_0600007
 ONTIE:0003304	vaccination	owl:Class	administering substance in vivo		Adminstering a vaccine to an organism with the intention of inducing immunity against antigen components of the vaccine.	http://purl.obolibrary.org/obo/VO_0000002	
 ONTIE:0003315	infectious challenge	owl:Class	administering substance in vivo		Administering an infectious agent to an organism in order to test if and how an infection will occur.	http://purl.obolibrary.org/obo/OBI_0000712	
@@ -51,7 +51,7 @@ NCBITaxon:64320	Zika virus	owl:Class	organism
 NCBITaxon:11676	Human immunodeficiency virus 1	owl:Class	organism				
 NCBITaxon:5599	Alternaria alternata	owl:Class	organism				
 NCBITaxon:2697049	SARS-CoV-2	owl:Class	organism				
-VO:1	vaccine	owl:Class	material entity				
+VO:0000001	vaccine	owl:Class	material entity				
 VO:0000035	Dryvax	owl:Class	vaccine				
 VO:0000044	FluMist	owl:Class	vaccine				
 VO:0000045	Fluarix	owl:Class	vaccine				
