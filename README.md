@@ -1,6 +1,6 @@
 # Immune Exposure Validation
 
-This repository contains scripts and data for validating immune exposure tables against that ontology using [VALVE](https://github.com/ontodev/valve).
+This repository contains scripts and data for validating immune exposure tables using [VALVE](https://github.com/ontodev/valve).
 
 # Prerequisites
 
