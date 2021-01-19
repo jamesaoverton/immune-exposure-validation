@@ -1,0 +1,8 @@
+table	when column	when condition	then table	then column	then condition	level	description	note
+terminology	Has Material Basis	not(blank)	terminology	Label	"under(terminology.Parent, ""disease"")"	ERROR	Only a disease can have a material basis	
+immune_exposure	exposureMaterialReported	blank	immune_exposure	exposureMaterialId	blank	ERROR	When the exposure material reported is blank, the exposure material ID must also be blank.	
+immune_exposure	exposureMaterialReported	not(blank)	immune_exposure	exposureMaterialId	lookup(terminology, Label, ID)	ERROR	The exposure material ID must match the exposure material reported.	
+immune_exposure	diseaseReported	blank	immune_exposure	diseaseStageReported	blank	ERROR	When the disease reported is blank, the disease stage must also be blank.	
+immune_exposure	diseaseReported	not(blank)	immune_exposure	diseaseOntologyId	lookup(terminology, Label, ID)	ERROR	The disease ontology ID must match the disease reported.	
+immune_exposure	exposureProcessReported	"under(terminology.Parent, ""occurrence of disease"")"	immune_exposure	diseaseReported	not(blank)	ERROR	"When the exposure process is ""occurrence of disease"" then the disease reported must be provided."	
+immune_exposure	diseaseReported	"under(terminology.Parent, ""occurrence of infectious disease"")"	immune_exposure	exposureMaterialReported	"lookup(terminology, Label, ""Has Material Basis"")"	ERROR	When an infectious disease is reported, the material reported must be the material basis for that disease.	

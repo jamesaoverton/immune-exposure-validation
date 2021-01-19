@@ -1,15 +1,22 @@
+.PHONY: extract requirements validate replace
+
 immune_exposure.csv: convert.py immune_exposure.txt
 	python3 $^ $@
 
-immune_exposure.owl: immune_exposure_template.tsv
-	bin/robot template \
-	--prefix "IE: http://example.com/IE_" \
-	--prefixes obo_context.jsonld \
-	--template $< \
-	--output $@
+tables:
+	mkdir -p $@
 
-immune_exposure_report.txt: immune_exposure.csv immune_exposure.owl
-	bin/robot validate --csv $(word 1,$^) --owl $(word 2,$^) --output $@
+requirements:
+	pip install -r requirements.txt
 
-immune_exposure_report.xlsx: immune_exposure.csv immune_exposure.owl
-	bin/robot validate --csv $(word 1,$^) --owl $(word 2,$^) --output $@
+extract: tables requirements
+	xlsx2csv -a -d tab immune_exposure.xlsx $<
+	for f in tables/*.csv ; do \
+	  		mv $$f "$${f%.csv}.tsv"; \
+	  done
+
+report.tsv: tables requirements
+	valve $< -o $@
+
+validate:
+	make report.tsv

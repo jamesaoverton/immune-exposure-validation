@@ -1,0 +1,9 @@
+subjectAccession	exposureAccession	exposureProcessPreferred	exposureProcessReported	exposureMaterialId	exposureMaterialPreferred	exposureMaterialReported	diseaseOntologyId	diseasePreferred	diseaseReported	diseaseStagePreferred	diseaseStageReported
+SUB119057	IM12812	occurrence of infectious disease	occurrence of infectious disease	NCBITaxon:11103		Hepacivirus C	DOID:1883		Hepatitis C	Chronic	Chronic
+SUB112504	IM13093	occurrence of infectious disease	occurrence of infectious disease	NCBITaxon:11082	West Nile virus	West Nile virus	DOID:2365		West Nile encephalitits	Post	Post
+SUB112559	IM13099	occurrence of asymptomatic infection	occurrence of asymptomatic infection	NCBITaxon:11082	West Nile virus	West Nile virus					
+SUB112504	IM13107	occurrence of infectious disease	occurrence of infectious disease	NCBITaxon:11082	West Nile virus	West Nile virus	DOID:2365		West Nile encephalitits	Post	Post
+SUB112559	IM13113	occurrence of asymptomatic infection	occurrence of asymptomatic infection	NCBITaxon:11082	West Nile virus	West Nile virus					
+SUB117279	IM13139	occurrence of infectious disease	occurrence of infectious disease	NCBITaxon:11082	West Nile virus	West Nile virus	DOID:9588		encephalitis	Post	Post
+SUB112525	IM13147	occurrence of asymptomatic infection	occurrence of asymptomatic infection	NCBITaxon:11082	West Nile virus	West Nile virus					
+SUB189519	IM924	administering substance in vivo	administering substance in vivo	XCO:0000248		kidney transplant	DOID:783	end stage renal disease	end stage renal failure	Unknown	Unknown
